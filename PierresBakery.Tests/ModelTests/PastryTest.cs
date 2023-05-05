@@ -6,8 +6,12 @@ using System;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class PastryTests
+  public class PastryTests : IDisposable
   {
+    public void Dispose()
+    {
+      Pastry.ClearAll();
+    }
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
@@ -38,6 +42,21 @@ namespace PierresBakery.Tests
       string result_type = testPastry.PastryChoice;
       //Assert
       Assert.AreEqual(unit_type, result_type);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsAllPastryList_List()
+    {
+      //Arrange
+      Pastry unit1 = new Pastry(2, "pastry");
+      Pastry unit2 = new Pastry(2, "pastry");
+      Pastry unit3 = new Pastry(2, "pastry");
+      Pastry unit4 = new Pastry(0, "pastry");
+      List<Pastry> expectedResult = new List<Pastry> {unit1, unit2, unit3, unit4};
+      //Act
+      List<Pastry> actualResult = Pastry.GetAll();
+      //Assert
+      CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
   }
