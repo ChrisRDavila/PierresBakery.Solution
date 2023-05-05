@@ -1,4 +1,6 @@
-namespace PierresBakery.Models.Models
+using System;
+
+namespace PierresBakery.Models
 {
   public class Bread
   {
