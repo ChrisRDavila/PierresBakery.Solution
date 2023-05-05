@@ -62,5 +62,20 @@ namespace PierresBakery.Tests
       //Assert
       Assert.AreEqual(unit_type, result_type);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsAllBreadList_List()
+    {
+      //Arrange
+      Bread unit1 = new Bread(5, "breadloaf");
+      Bread unit2 = new Bread(5, "breadloaf");
+      Bread unit3 = new Bread(0, "breadloaf");
+      List<Bread> expectedResult = new List<Bread> {unit1, unit2, unit3};
+      //Act
+      List<Bread> actualResult = Bread.GetAll();
+      //Assert
+      CollectionAssert.AreEqual(expectedResult, actualResult);
+
+    }
   }
 }
