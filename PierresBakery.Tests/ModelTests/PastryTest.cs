@@ -27,5 +27,18 @@ namespace PierresBakery.Tests
         Assert.AreEqual(unit_cost, result_cost);
     }
 
+    [TestMethod]
+    public void GetUnitTypeForPastry_ReturnsPastryChoice_String()
+    {
+      //Arrange
+      int unit_cost = 2;
+      string unit_type = "pastry";
+      Pastry testPastry = new Pastry(unit_cost, unit_type);
+      //Act
+      string result_type = testPastry.PastryChoice;
+      //Assert
+      Assert.AreEqual(unit_type, result_type);
+    }
+
   }
 }
