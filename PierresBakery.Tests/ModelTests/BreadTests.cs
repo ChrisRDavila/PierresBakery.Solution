@@ -80,8 +80,6 @@ namespace PierresBakery.Tests
       List<Bread> expectedResult = new List<Bread> {unit1, unit2, unit3};
       //Act
       List<Bread> actualResult = Bread.GetAll();
-      Console.WriteLine(actualResult);
-      Console.WriteLine(expectedResult);
       //Assert
       CollectionAssert.AreEqual(expectedResult, actualResult);
 
@@ -96,10 +94,8 @@ namespace PierresBakery.Tests
       List<Bread> expectedResult = new List<Bread> { };
       //Act
       Bread.ClearAll();
-      Console.WriteLine(expectedResult);
       //Assert
       CollectionAssert.AreEqual(expectedResult, Bread.GetAll());
     }
-
   }
 }
