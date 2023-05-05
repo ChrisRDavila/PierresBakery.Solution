@@ -59,5 +59,19 @@ namespace PierresBakery.Tests
       CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
+    [TestMethod]
+    public void ClearAll_ClearsAllPastryList_Void()
+    {
+      Pastry unit1 = new Pastry(2, "pastry");
+      Pastry unit2 = new Pastry(2, "pastry");
+      Pastry unit3 = new Pastry(2, "pastry");
+      Pastry unit4 = new Pastry(0, "pastry");
+      List<Pastry> expectedResult = new List<Pastry> { };
+      //Act
+      Pastry.ClearAll();
+      //Assert
+      CollectionAssert.AreEqual(expectedResult, Pastry.GetAll());
+    }
+
   }
 }
