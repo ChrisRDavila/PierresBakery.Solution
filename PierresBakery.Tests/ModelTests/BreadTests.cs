@@ -49,7 +49,18 @@ namespace PierresBakery.Tests
       //Assert
       Assert.AreEqual(unit_type, result_type);
     }
-    
 
+    [TestMethod]
+    public void SetUnitTypeForBread_SetsBreadChoice_Void()
+    {
+      //Arrange
+      int unit_cost = 5;
+      string unit_type = "breadloaf";
+      Bread testBread = new Bread(unit_cost, unit_type);
+      //Act
+      string result_type = testBread.BreadChoice;
+      //Assert
+      Assert.AreEqual(unit_type, result_type);
+    }
   }
 }
