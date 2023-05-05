@@ -1,12 +1,14 @@
 using System;
+using PierresBakery.Models;
+using System.Collections.Generic;
 
-namespace ProjectName
+namespace PierresBakery
 {
-  class Program
+  public class Program
   {
     static void Main()
     {
       // UI code goes here.
     }
   }
-}
+}  
