@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
-using Systems.Collections.Generic;
-using System;
 
 namespace PierresBakery.Tests
 {

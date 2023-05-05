@@ -1,6 +1,5 @@
 using System;
 using PierresBakery.Models;
-using System.Collections.Generic;
 
 namespace PierresBakery
 {
@@ -8,7 +7,7 @@ namespace PierresBakery
   {
     static void Main()
     {
-      // UI code goes here.
+      Console.WriteLine("check");
     }
   }
 }  
