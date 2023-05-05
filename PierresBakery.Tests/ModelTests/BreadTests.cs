@@ -9,7 +9,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread testBread = new Bread(1);
+      Bread testBread = new Bread(1, "breadloaf");
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
 
@@ -17,38 +17,39 @@ namespace PierresBakery.Tests
     public void GetBreadPrice_ReturnsBreadPrice_Int()
     {
         //Arrange
-        int test_cost = 5;
-        Bread testBread = new Bread(5);
+        int unit_cost = 5;
+        Bread testBread = new Bread(5, "breadloaf");
         //Act
         int result_cost = testBread.BreadPrice;
         //Assert
-        Assert.AreEqual(test_cost, result_cost);
+        Assert.AreEqual(unit_cost, result_cost);
     }
 
     [TestMethod]
     public void SetBreadPrice_SetBreadPrice_Void()
     {
       //Arrange
-      int test_cost = 5;
-      Bread testBread = new Bread(5);
+      int unit_cost = 5;
+      Bread testBread = new Bread(5, "breadlaof");
       //Act
       int result_cost = testBread.BreadPrice;
       //Assert
-      Assert.AreEqual (test_cost, result_cost);
+      Assert.AreEqual (unit_cost, result_cost);
     }
 
     [TestMethod]
     public void GetUnitTypeForBread_ReturnsBreadChoice_String()
     {
       //Arrange
-      int test_cost = 5;
-      string test_type = "breadloaf";
-      Bread testBread = new Bread(test_cost, "test_type");
+      int unit_cost = 5;
+      string unit_type = "breadloaf";
+      Bread testBread = new Bread(unit_cost, unit_type);
       //Act
       string result_type = testBread.BreadChoice;
       //Assert
-      Assert.AreEqual(test_type, result_type);
+      Assert.AreEqual(unit_type, result_type);
     }
+    
 
   }
 }
