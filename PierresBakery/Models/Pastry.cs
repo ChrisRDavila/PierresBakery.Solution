@@ -24,7 +24,13 @@ namespace PierresBakery.Models
       {
         roll_cost = Rolls * 2;
       }
+      else if((Rolls-1) % 4 == 0)
+      {
+        roll_cost = (2 * (Rolls -1)) + (2 -(2 * ((Rolls - 1 ) / 4)));
+        
+      }
       return roll_cost;
-    } 
+    }
+
   }
 } 

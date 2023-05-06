@@ -42,13 +42,21 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void CostPastryLessThen4_ReturnsPastryCost_Int()
     {
-      int testRolls = 3;
+      int testRolls = 13;
       Pastry testPastry = new Pastry(testRolls);
-      int expectCost = 6;
+      int expectCost = 20;
       int resultCost = testPastry.RollCost();
       Assert.AreEqual(expectCost, resultCost);
     }
-
+    [TestMethod]
+    public void CostPastryModulo1_ReturnsPastryCost_Int()
+    {
+      int testRolls = 5;
+      Pastry testPastry = new Pastry(testRolls);
+      int expectCost = 8;
+      int resultCost = testPastry.RollCost();
+      Assert.AreEqual(expectCost, resultCost);
+    }
 
   }
 }    

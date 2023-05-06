@@ -29,7 +29,7 @@ namespace PierresBakery.Models
       {
         if ((Loaves - 1) % 3 == 0) 
         {
-          loaf_cost = (5 * (Loaves - 1)) - ((Loaves/3) * 5) + 5;
+          loaf_cost = (5 * (Loaves - 1)) - ((Loaves / 3) * 5) + 5;
         }
         else
         {
