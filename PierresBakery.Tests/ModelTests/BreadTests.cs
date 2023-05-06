@@ -7,13 +7,9 @@ using System;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BreadTests : IDisposable
+  public class BreadTests
 
   {
-    public void Dispose()
-    {
-      Bread.ClearAll();
-    }
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
@@ -30,6 +26,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(testAmount, result);
 
     }
+    
     [TestMethod]
     public void SetBreadAmount_SetAmountValue_Int()
     {
@@ -38,13 +35,17 @@ namespace PierresBakery.Tests
       int result = testBread.Loaves;
       Assert.AreEqual(testAmount, result);
     }
+    
     [TestMethod]
-    public void createInstanceList_ReturnList_List()
+    public void CostBreadDivisibleBy3_ReturnsBreadCost_Int()
     {
-      List<Bread> newList = new List<Bread> {};
-      List<Bread> result = Bread.GetAll();
-      CollectionAssert.AreEqual(newList, result);
+      int testRolls = 9;
+      Bread testBread = new Bread(testRolls);
+      int expectCost = 30;
+      int resultCost = testBread.CarbCost();
+      Assert.AreEqual(expectCost, resultCost);
     }
+    
     
   }  
 }
