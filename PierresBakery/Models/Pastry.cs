@@ -20,6 +20,10 @@ namespace PierresBakery.Models
       {
         roll_cost = ((Rolls -(Rolls / 4)) * 2);
       }
+      else if (Rolls < 4)
+      {
+        roll_cost = Rolls * 2;
+      }
       return roll_cost;
     } 
   }
