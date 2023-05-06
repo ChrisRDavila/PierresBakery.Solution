@@ -9,9 +9,9 @@ namespace PierresBakery.Models
     public int Rolls { get;}
 
     private int roll_cost = 0;
-    public Pastry(int _amount)
+    public Pastry(int _amountPastry)
     {
-      Rolls = _amount;
+      Rolls = _amountPastry;
     }
 
     public int RollCost()

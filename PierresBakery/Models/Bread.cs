@@ -10,9 +10,9 @@ namespace PierresBakery.Models
     public int Loaves { get; set; }
     private int loaf_cost = 0;
     
-    public Bread(int _amount)
+    public Bread(int _amountLoaves)
     {
-      Loaves = _amount;
+      Loaves = _amountLoaves;
     }
     
     public int CarbCost()
