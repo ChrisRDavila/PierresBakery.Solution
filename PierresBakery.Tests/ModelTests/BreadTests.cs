@@ -45,6 +45,15 @@ namespace PierresBakery.Tests
       int resultCost = testBread.CarbCost();
       Assert.AreEqual(expectCost, resultCost);
     }
+    [TestMethod]
+    public void CostBreadLessThen3_ReturnsBreadCost_Int()
+    {
+      int testRolls = 2;
+      Bread testBread = new Bread(testRolls);
+      int expectCost = 10;
+      int resultCost = testBread.CarbCost();
+      Assert.AreEqual(expectCost, resultCost);
+    }
     
     
   }  
