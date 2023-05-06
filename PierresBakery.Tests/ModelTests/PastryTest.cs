@@ -21,7 +21,23 @@ namespace PierresBakery.Tests
       Pastry testPastry = new Pastry(5);
       int result = testPastry.Rolls;
       Assert.AreEqual(testAmount, result);
-
+    }
+    [TestMethod]
+    public void SetPastryAmount_SetPastryValue_Int()
+    {
+      int testAmount = 5;
+      Pastry testPastry = new Pastry(5);
+      int result = testPastry.Rolls;
+      Assert.AreEqual(testAmount, result);
+    }
+    [TestMethod]
+    public void CostBreadDivisibleBy4_ReturnsPastryCost_Int()
+    {
+      int testAmount = 8;
+      Pastry testPastry = new Pastry(testAmount);
+      int expectCost = 12;
+      int resultCost = testPastry.RollCost();
+      Assert.AreEqual(expectCost, resultCost);
     }
 
   }
