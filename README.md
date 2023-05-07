@@ -31,4 +31,4 @@
 * _Application is not set up to run multiple times without using dotnet run_
 
 ## License
-[MIT]()
+[MIT](https://github.com/ChrisRDavila/PierresBakery.Solution/blob/main/License.txt)
