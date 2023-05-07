@@ -56,15 +56,15 @@ namespace PierresBakery
       int pastryBill = pastryOrder.RollCost();
       int totalBill = breadBill + pastryBill;
       Console.WriteLine("\nYour order total for Bread is:");
-      Console.WriteLine("----------------------------------");
+      Console.WriteLine("__________________________________");
       Console.WriteLine($" \n${breadBill}.00 dollars");
       Console.WriteLine("----------------------------------");
       Console.WriteLine("\nYour order total for Pastries is:");
-Console.WriteLine("----------------------------------");
+      Console.WriteLine("___________________________________");
       Console.WriteLine($"\n${pastryBill}.00 dollars");
       Console.WriteLine("----------------------------------");
       Console.WriteLine("\nYour total for the full order is:");
-      Console.WriteLine("----------------------------------");
+      Console.WriteLine("___________________________________");
       Console.WriteLine($"\n${totalBill}.00 dollars");
       Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
 
