@@ -8,14 +8,14 @@ namespace PierresBakery
   {
     static void Main()
     {
-      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.Write(WelcomeBanner.Welcome);
       Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("Hello and Welcome to Pierres Bakery app!");
-      Console.WriteLine("\nWe Specialize in two items: \nBread 5$ each \nPastry 2$ each");
-      Console.WriteLine("\nWere currently running a deal on both \nBuy Two Loaves of Bread, get One Free \nBuy Three Pastries and Get One Free ");
-      Console.WriteLine("\nWould You Like to purchase any Bread");
-      Console.WriteLine("\nIf yes please enter 'yes', if no please enter 'no'");
+      Console.WriteLine("\nWe Specialize in two items: \n\nBread @ 5$ each \nPastry @ 2$ each");
+      Console.WriteLine("\nWere currently running a deal on both: \nBuy Two Loaves of Bread, get One Free \nBuy Three Pastries, Get One Free ");
+      Console.WriteLine("\nWould You Like to purchase some Bread?");
+      Console.WriteLine("\nIf yes please enter 'yes', if no please enter 'no' below:");
       string breadAnswer = Console.ReadLine();
       if(breadAnswer == "yes")
       {
@@ -26,8 +26,8 @@ namespace PierresBakery
       }
       static void PastryOrder()
       {
-        Console.WriteLine("\nWould You Like to purchase any Pastries");
-        Console.WriteLine("\nIf yes please enter 'yes', if no please enter 'no'");
+        Console.WriteLine("\nWould You Like to purchase any Pastries?");
+        Console.WriteLine("\nIf yes please enter 'yes', if no please enter 'no':");
         string _pastryAnswer = Console.ReadLine();
         if (_pastryAnswer == "yes")
         {
@@ -40,9 +40,11 @@ namespace PierresBakery
       }
     static void OrderInput()
       {
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("\nHow many loaves of bread would you like to purchase?");
       Console.WriteLine("\nPlease enter a positive whole number for your bread order:");
       int _amountLoaves = int.Parse(Console.ReadLine());
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("\nHow many pastries would you like to purchase?");
       Console.WriteLine("\nPlease enter a positive whole number for your pastry order:");
       int _amountPastries = int.Parse(Console.ReadLine());
@@ -53,8 +55,19 @@ namespace PierresBakery
       int breadBill = breadOrder.CarbCost();
       int pastryBill = pastryOrder.RollCost();
       int totalBill = breadBill + pastryBill;
-      Console.WriteLine($"\nYour order total for Bread is \n${breadBill}.00 dollars\nYour order total for Pastries is \n${pastryBill}.00 dollars");
-      Console.WriteLine($"\nYour total for the full order is \n${totalBill}.00 dollars");
+      Console.WriteLine("\nYour order total for Bread is:");
+      Console.WriteLine("----------------------------------");
+      Console.WriteLine($" \n${breadBill}.00 dollars");
+      Console.WriteLine("----------------------------------");
+      Console.WriteLine("\nYour order total for Pastries is:");
+Console.WriteLine("----------------------------------");
+      Console.WriteLine($"\n${pastryBill}.00 dollars");
+      Console.WriteLine("----------------------------------");
+      Console.WriteLine("\nYour total for the full order is:");
+      Console.WriteLine("----------------------------------");
+      Console.WriteLine($"\n${totalBill}.00 dollars");
+      Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
+
       Goodbye();
       }    
     static void JustPastry()
@@ -85,7 +98,7 @@ namespace PierresBakery
     static void Goodbye()
     {
       Console.Write(GoodbyeBanner.Goodbye);
-      Console.WriteLine("Thanks for dining with us");
+      Console.WriteLine("Thanks for dining with us <3<3<3");
       
     }  
     }
