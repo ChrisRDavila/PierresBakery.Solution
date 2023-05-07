@@ -8,8 +8,9 @@ namespace PierresBakery
   {
     static void Main()
     {
-      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.Write(WelcomeBanner.Welcome);
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("Hello and Welcome to Pierres Bakery app!");
       Console.WriteLine("\nWe Specialize in two items: \nBread 5$ each \nPastry 2$ each");
       Console.WriteLine("\nWere currently running a deal on both \nBuy Two Loaves of Bread, get One Free \nBuy Three Pastries and Get One Free ");
@@ -46,6 +47,7 @@ namespace PierresBakery
       Console.WriteLine("\nPlease enter a positive whole number for your pastry order:");
       int _amountPastries = int.Parse(Console.ReadLine());
       Console.Write(Calculating.Sum);
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Bread breadOrder = new Bread(_amountLoaves);
       Pastry pastryOrder = new Pastry(_amountPastries);
       int breadBill = breadOrder.CarbCost();
@@ -61,6 +63,7 @@ namespace PierresBakery
       Console.WriteLine("\nPlease enter a positive whole number for your pastry order:");
       int _amountPastries = int.Parse(Console.ReadLine());
       Console.Write(Calculating.Sum);
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Pastry pastryOrder = new Pastry(_amountPastries);
       int pastryBill = pastryOrder.RollCost();
       Console.WriteLine($"\nYour order total for Pastries is \n${pastryBill}.00 dollars");
@@ -73,6 +76,7 @@ namespace PierresBakery
       Console.WriteLine("\nPlease enter a positive whole number for your bread order:");
       int _amountLoaves = int.Parse(Console.ReadLine());
       Console.Write(Calculating.Sum);
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Bread breadOrder = new Bread(_amountLoaves);
       int breadBill = breadOrder.CarbCost();
       Console.WriteLine($"\nYour order total for Bread is \n${breadBill}.00 dollars");
