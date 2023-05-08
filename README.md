@@ -8,7 +8,6 @@
 
 * _C#_
 * _MSTest_
-* _.Net_
 * _GitHub_
 *_.Net SDK 6_
 
