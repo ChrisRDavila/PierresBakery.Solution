@@ -10,7 +10,7 @@
 * _MSTest_
 * _.Net_
 * _GitHub_
-*_dotnet version 6.0_
+*_.Net SDK 6_
 
 
 ## Description
