@@ -6,10 +6,11 @@
 
 ## Technologies Used
 
-* _C#_
+* _C# 10 _
 * _MSTest_
 * _GitHub_
 *_.Net SDK 6_
+* _ASP.NET Core MVC 6_
 
 
 ## Description
@@ -20,9 +21,9 @@
 * _1. Clone this repo._
 * _2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "PerresBakery"._
 * _3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal._
-* _5. Once the program is running it will give instructions on how to choose which item(s) to purchase and based items chosen will ask the user to enter an integer for each or one item.
-* _6. Simply type each number and hit enter and the program will automatically give you a respose for total cost and cost of type of item.
-* _7. The program will then give a farewell message and exit. To rerun the program simply repeat from step 3.
+* _4. Once the program is running it will give instructions on how to choose which item(s) to purchase and based items chosen will ask the user to enter an integer for each or one item._
+* _5. Simply type each number and hit enter and the program will automatically give you a respose for total cost and cost of type of item.
+* _6. The program will then give a farewell message and exit. To rerun the program simply repeat from step 3._
 
 ## Known Bugs
 
